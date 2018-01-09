@@ -1,0 +1,16 @@
+[
+{
+  "modid": "aopcraft",
+  "name": "Age of the PhoenixCraft",
+  "description": "An Minecraft mod based on the Age of the Phoenix series by author B. H. Gorden.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Lahermosa1, Rosycutiepie5 and Lordkancer of Infinite Egg Creations, LLC."],
+  "credits": "The Forge and FML guys (and girls?), for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
