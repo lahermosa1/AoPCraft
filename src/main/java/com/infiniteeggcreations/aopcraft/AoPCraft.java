@@ -1,6 +1,8 @@
 package com.infiniteeggcreations.aopcraft;
 
+import com.infiniteeggcreations.aopcraft.init.AoPCraftBlocks;
 import com.infiniteeggcreations.aopcraft.init.AoPCraftItems;
+import com.infiniteeggcreations.aopcraft.init.AoPCraftRecipes;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -24,7 +26,9 @@ public class AoPCraft {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         System.out.println(AoPCraft.MODID + ":preInit");
+        AoPCraftBlocks.init();
         AoPCraftItems.init();
+        AoPCraftRecipes.init();
     }
 
     @EventHandler

@@ -1,6 +1,10 @@
-item.phoenix_feather.name=Phoenix Feather
+item.marble.name=Marble
 item.phoenix_egg.name=Phoenix Egg
+item.phoenix_feather.name=Phoenix Feather
+item.phoenix_sword.name=Phoenix Sword
 
+tile.base_block.name=Base Block
 tile.nest.name=Nest
+tile.marble_rough.name=Rough Marble
 
 itemGroup.tabAoPCraft=AoPCraft
