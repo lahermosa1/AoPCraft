@@ -1,7 +1,10 @@
 package com.infiniteeggcreations.aopcraft.init;
 
 import com.infiniteeggcreations.aopcraft.AoPCraft;
+import com.infiniteeggcreations.aopcraft.item.ItemMarble;
+import com.infiniteeggcreations.aopcraft.item.ItemPhoenixEgg;
 import com.infiniteeggcreations.aopcraft.item.ItemPhoenixFeather;
+import com.infiniteeggcreations.aopcraft.item.ItemPhoenixSword;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -19,16 +22,22 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class AoPCraftItems {
 
     // List of all mod items:
-    static Item phoenix_feather;
+    public static Item marble;
+    public static Item phoenix_egg;
+    public static Item phoenix_feather;
+    public static Item phoenix_sword;
 
     // This init method will be called during the preInit fxn of my Main class (AoPCraft.java)
     // and functions to initialize all mod items. It will return nothing and does not need any arguments.
     // Here you change the Tab and Stack Size of each mod item.  Maybe other stuff to???
     public static void init() {
 
-        // Initializing the aopcraftItem variable & passing it the name aopcraftItem.
+        // Initializing the my mod item variables (declared above) & passing it the name aopcraftItem.
+        marble = new ItemMarble("marble").setCreativeTab(CreativeTabs.MATERIALS).setMaxStackSize(64);
+        phoenix_egg = new ItemPhoenixEgg("phoenix_egg").setCreativeTab(CreativeTabs.MISC).setMaxStackSize(1);
         phoenix_feather = new ItemPhoenixFeather("phoenix_feather").setCreativeTab(CreativeTabs.MISC)
                 .setMaxStackSize(10);
+        phoenix_sword = new ItemPhoenixSword("phoenix_sword").setCreativeTab(CreativeTabs.COMBAT).setMaxStackSize(1);
     }
 
     // Tell Forge that we have a new item to register using the RegistryEvent.
@@ -38,7 +47,7 @@ public class AoPCraftItems {
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         // Add more mod items separated by commas:
-        event.getRegistry().registerAll(phoenix_feather);
+        event.getRegistry().registerAll(marble, phoenix_egg, phoenix_feather, phoenix_sword);
     }
 
     // Register the model location of the item using the ModelRegistryEvent.
@@ -47,7 +56,10 @@ public class AoPCraftItems {
     @SubscribeEvent
     public static void registerRenders(ModelRegistryEvent event) {
         // Add more mod items to the list separated by a semicolon and on a new line:
+        registerRender(marble);
+        registerRender(phoenix_egg);
         registerRender(phoenix_feather);
+        registerRender(phoenix_sword);
     }
 
     // Add another static method called registerRender(w/o the s) with Item as argument.
@@ -57,5 +69,4 @@ public class AoPCraftItems {
         ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(),
                 "inventory"));
     }
-
 }
