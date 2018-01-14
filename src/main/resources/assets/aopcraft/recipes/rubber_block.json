@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"  ],
+  "key": {
+    "A": [
+      {
+        "item": "aopcraft:rubber",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:rubber_block",
+    "data": 0
+  }
+}

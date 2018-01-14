@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ACM",
+    "AAA"
+  ],
+  "key": {
+    "A": [
+      {
+        "item": "aopcraft:serpentinite_ingot",
+        "data": 0
+      }
+    ],
+    "C": [
+      {
+        "item": "minecraft:coal_block",
+        "data": 0
+      }
+    ],
+    "M": [
+      {
+        "item": "aopcraft:marble",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:serpentinite_block",
+    "data": 0
+  }
+}

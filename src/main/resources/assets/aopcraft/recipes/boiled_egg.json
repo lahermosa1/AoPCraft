@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:egg",
+      "data": 0
+    },
+    {
+      "item": "minecraft:water_bucket",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "aopcraft:boiled_egg",
+    "data": 0
+  }
+}

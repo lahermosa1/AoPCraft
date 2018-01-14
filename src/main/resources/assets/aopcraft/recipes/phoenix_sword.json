@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    " B ",
+    " S "  ],
+  "key": {
+    "F": [
+      {
+        "item": "aopcraft:phoenix_feather",
+        "data": 0
+      }
+    ],
+    "B": [
+      {
+       "item": "minecraft:blaze_powder",
+        "data": 0
+      }
+    ],
+    "S": [
+      {
+        "item": "minecraft:stick",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:phoenix_sword",
+    "data": 0
+  }
+}
