@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": [
+      { "model": "aopcraft:serpentinite_block" }
+    ]
+  }
+}
