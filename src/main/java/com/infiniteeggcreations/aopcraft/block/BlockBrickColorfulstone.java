@@ -5,11 +5,11 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
 
-public class BlockBase extends Block {
+public class BlockBrickColorfulstone extends Block {
 
     // My Block needs a constructor with arguments a String, for the name,
     // and a Material. Must call super(material) as well.
-    public BlockBase(String name, Material material)
+    public BlockBrickColorfulstone(String name, Material material)
     {
         super(material);
 
@@ -19,7 +19,7 @@ public class BlockBase extends Block {
         setRegistryName(name);
 
        //  Sets how many hits it takes to break a block.  For reference: Stone block has 1.5F Hardness.
-        setHardness(1.5F);
+        setHardness(1.0F);
 
         //  Reference: Wood or gold(0), stone(1), iron (2), diamond(3)
         setHarvestLevel("pick_axe", 0);
