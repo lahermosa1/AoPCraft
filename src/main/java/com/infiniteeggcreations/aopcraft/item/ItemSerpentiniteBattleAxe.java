@@ -1,5 +1,6 @@
 package com.infiniteeggcreations.aopcraft.item;
 
+import com.infiniteeggcreations.aopcraft.AoPCraftTabs;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -13,18 +14,21 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ItemPhoenixSword extends Item
+// TODO: Find way to apply poison effect to target.
+
+public class ItemSerpentiniteBattleAxe extends Item
 {
     private final float attackDamage;
 
-    public ItemPhoenixSword(String name)
+    public ItemSerpentiniteBattleAxe(String name)
     {
         setUnlocalizedName(name);
         setRegistryName(name);
-        this.attackDamage = (20.0F);
-        this.setMaxDamage(20);
-        this.setCreativeTab(CreativeTabs.COMBAT);
+        this.attackDamage = (10.0F);
+        this.setMaxDamage(12);
+        this.setCreativeTab(AoPCraftTabs.tabCombat);
         setNoRepair();
+        setMaxStackSize(1);
     }
 
     /**
@@ -32,7 +36,7 @@ public class ItemPhoenixSword extends Item
      */
     public float getAttackDamage()
     {
-        return (20.0F);
+        return (10.0F);
     }
 
     public float getDestroySpeed(ItemStack stack, IBlockState state)
@@ -41,7 +45,7 @@ public class ItemPhoenixSword extends Item
 
         if (block == Blocks.WEB)
         {
-            return 20.0F;
+            return 15.0F;
         }
         else
         {
@@ -57,8 +61,8 @@ public class ItemPhoenixSword extends Item
     public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker)
     {
         stack.damageItem(1, attacker);
-        // Added on my own to light target on fire and toss them backwards:
-        target.setFire(10);
+        // Added on my own to launch target into the air:
+        target.setNoGravity(true);
         target.knockBack(target, 10, 5, 0);
         return true;
     }

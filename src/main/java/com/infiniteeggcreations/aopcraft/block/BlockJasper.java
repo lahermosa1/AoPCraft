@@ -13,17 +13,17 @@ import java.util.Random;
  * Reference:
  * Making a custom ore block (drops items when harvested):
  */
-public class BlockMarbleRough extends Block {
+public class BlockJasper extends Block {
 
     // Constructors:
-    public BlockMarbleRough(String name, Material material)
+    public BlockJasper(String name, Material material)
     {
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setHardness(4.0F);
-        setResistance(6.0F);
-        setHarvestLevel("pick_axe", 2);
+        setHardness(6.0F);
+        setResistance(7.0F);
+        setHarvestLevel("pick_axe", 3);
         setCreativeTab(AoPCraftTabs.tabBlocks);
 
     }
@@ -33,7 +33,7 @@ public class BlockMarbleRough extends Block {
      */
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return AoPCraftItems.marble;
+        return AoPCraftItems.serpentinite;
     }
 
     /**
@@ -41,6 +41,6 @@ public class BlockMarbleRough extends Block {
      */
     public int quantityDropped(Random random)
     {
-        return 2 + random.nextInt(6);
+        return 2 + random.nextInt(4);
     }
 }

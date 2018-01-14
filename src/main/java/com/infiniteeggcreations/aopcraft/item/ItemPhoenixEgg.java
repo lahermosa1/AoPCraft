@@ -1,6 +1,6 @@
 package com.infiniteeggcreations.aopcraft.item;
 
-import com.infiniteeggcreations.aopcraft.entity.EntityPhoenixEgg;
+import com.infiniteeggcreations.aopcraft.entity.projectile.EntityPhoenixEgg;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;

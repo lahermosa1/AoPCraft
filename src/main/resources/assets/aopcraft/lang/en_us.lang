@@ -1,10 +1,57 @@
+// ================== ITEMS ==================
+item.boiled_egg.name=Boiled Egg
+item.bucket_latex.name=Latex Bucket
+
+item.deviled_egg.name=Deviled Egg
+
+item.jasper.name=Jasper
+
 item.marble.name=Marble
+
 item.phoenix_egg.name=Phoenix Egg
 item.phoenix_feather.name=Phoenix Feather
 item.phoenix_sword.name=Phoenix Sword
 
-tile.base_block.name=Base Block
-tile.nest.name=Nest
-tile.marble_rough.name=Rough Marble
+item.rubber.name=Rubber
 
-itemGroup.tabAoPCraft=AoPCraft
+item.serpentinite.name=Serpentinite
+item.serpentinite_battle_axe.name=Serpentinite Battle Axe
+item.serpentinite_ingot.name=Serpentinite Ingot
+item.silver.name=Silver
+
+
+// ================== BLOCKS ==================
+tile.aurora_leaves.name=Aurora Leaves
+
+tile.base_block.name=Base Block
+tile.brick_colorfulstone.name=Colorful Stone Brick
+tile.brick_limestone.name=Limestone Brick
+
+tile.granite_light_gray.name=Light Gray Granite
+
+tile.jasper_block.name=Jasper Block
+tile.jasper_ore.name=Jasper Ore
+
+tile.nest.name=Nest
+
+tile.marble_rough.name=Rough Marble
+tile.marble_smooth.name=Smooth Marble
+
+tile.rubber_block.name=Rubber Block
+
+tile.serpentinite_ore.name=Serpentinite Ore
+tile.serpentinite_block.name=Serpentinite Block
+tile.stone_path.name=Stone Path
+tile.stone_rough.name=Rough Stone
+
+
+// ================== ENTITIES =================
+entity.bandit.name=BANDIT
+
+
+// =============== CREATIVE TABS =================
+itemGroup.tabItems=PhoenixCraft Items
+itemGroup.tabBlocks=PhoenixCraft Blocks
+itemGroup.tabCombat=PhoenixCraft Armor & Weapons
+itemGroup.tabConsumables=PhoenixCraft Consumables
+itemGroup.tabMaterials=PhoenixCraft Materials

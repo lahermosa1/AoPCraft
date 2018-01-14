@@ -9,6 +9,11 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
+
+/**
+ * TODO:  Add custom creative tabs: items, blocks, combat (armor & weapons), misc.
+ */
+
 @Mod(   modid = AoPCraft.MODID,
         name = AoPCraft.MODNAME,
         version = AoPCraft.VERSION)
