@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": [
+      { "model": "aopcraft:castlestone_brick_block" }
+    ]
+  }
+}

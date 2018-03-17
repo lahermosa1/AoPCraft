@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CC ",
+    "CS ",
+    " S "  ],
+  "key": {
+    "C": [
+      {
+        "item": "aopcraft:silver_ingot",
+        "data": 0
+      }
+    ],
+    "S": [
+      {
+        "item": "minecraft:stick",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:axe_silver",
+    "data": 0
+  }
+}

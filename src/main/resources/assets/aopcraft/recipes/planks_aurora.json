@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " AA",
+    " AA"  ],
+  "key": {
+    "A": [
+      {
+        "item": "aopcraft:aurora_log_block",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:planks_aurora",
+    "data": 0
+  }
+}

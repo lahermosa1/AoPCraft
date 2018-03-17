@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " MB",
+    " GR"  ],
+  "key": {
+    "M": [
+      {
+        "item": "aopcraft:rough_marble_block",
+        "data": 0
+      }
+    ],
+    "B": [
+      {
+        "item": "aopcraft:rough_blue_granite_block",
+        "data": 0
+      }
+    ],
+    "G": [
+      {
+        "item": "aopcraft:light_gray_granite_block",
+        "data": 0
+      }
+    ],
+    "R": [
+      {
+        "item": "aopcraft:rough_stone_block",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:colorfulstone_brick_block",
+    "data": 0
+  }
+}

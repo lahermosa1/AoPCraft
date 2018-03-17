@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "DEA",
+    " S "  ],
+  "key": {
+    "C": [
+      {
+        "item": "aopcraft:citrine",
+        "data": 0
+      }
+    ],
+    "A": [
+      {
+       "item": "aopcraft:amethyst",
+        "data": 0
+      }
+    ],
+    "D": [
+      {
+        "item": "minecraft:diamond",
+        "data": 0
+      }
+    ],
+    "E": [
+      {
+        "item": "minecraft:emerald",
+        "data": 0
+      }
+    ],
+    "S": [
+      {
+        "item": "minecraft:stick",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:jeweled_sword",
+    "data": 0
+  }
+}

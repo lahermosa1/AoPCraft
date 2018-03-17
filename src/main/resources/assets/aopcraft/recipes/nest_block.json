@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SMS",
+    "SSS"  ],
+  "key": {
+    "S": [
+      {
+        "item": "minecraft:stick",
+        "data": 0
+      }
+    ],
+    "M": [
+      {
+        "item": "aopcraft:mud_block",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:nest_block",
+    "data": 0
+  }
+}
