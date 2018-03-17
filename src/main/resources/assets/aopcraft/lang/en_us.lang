@@ -1,12 +1,29 @@
 // ================== ITEMS ==================
+item.amethyst.name=Amethyst
+
+item.bakari_waraxe.name=Warlord Bakari's War Axe
+item.blood_sword.name=Blood Sword
 item.boiled_egg.name=Boiled Egg
 item.bucket_latex.name=Latex Bucket
 
+item.citrine.name=Citrine
+item.citrine_sword.name=Citrine Sword
+item.copper_ingot.name=Copper Ingot
+item.axe_copper.name=Copper Axe
+item.hoe_copper.name=Copper Hoe
+item.pickaxe_copper.name=Copper Pickaxe
+item.shovel_copper.name=Copper Shovel
+item.copper_nugget.name=Copper Nugget
+item.curved_dagger.name=Curved Dagger
+
+item.dark_jasper_sword.name=Dark Jasper Sword
 item.deviled_egg.name=Deviled Egg
 
 item.jasper.name=Jasper
+item.jeweled_sword.name=Jeweled Sword
 
 item.marble.name=Marble
+item.multitool.name=Multipurpose Tool
 
 item.phoenix_egg.name=Phoenix Egg
 item.phoenix_feather.name=Phoenix Feather
@@ -15,43 +32,71 @@ item.phoenix_sword.name=Phoenix Sword
 item.rubber.name=Rubber
 
 item.serpentinite.name=Serpentinite
-item.serpentinite_battle_axe.name=Serpentinite Battle Axe
+item.serpentinite_battleaxe.name=Serpentinite Battle Axe
 item.serpentinite_ingot.name=Serpentinite Ingot
+item.scepter.name=Scepter
 item.silver.name=Silver
+item.axe_silver.name=Silver Axe
+item.hoe_silver.name=Silver Hoe
+item.silver_ingot.name=Silver Ingot
+item.silver_nugget.name=Silver Nugget
+item.pickaxe_silver.name=Silver Axe
+item.shovel_silver.name=Silver Shovel
+item.silver_spear.name=Silver-Tipped Spear
+
+item.winged_blood_sword.name=Winged Blood Sword
 
 
 // ================== BLOCKS ==================
-tile.aurora_leaves.name=Aurora Leaves
+tile.amethyst_ore_block.name=Amethyst Ore
+tile.aurora_leaves_block.name=Aurora Leaves
+tile.aurora_log_block.name=Aurora Log
+tile.aurora_planks_block.name=Aurora Wood Planks
 
-tile.base_block.name=Base Block
-tile.brick_colorfulstone.name=Colorful Stone Brick
-tile.brick_limestone.name=Limestone Brick
+tile.black_sand_block.name=Black Sand
 
-tile.granite_light_gray.name=Light Gray Granite
+tile.castlestone_brick_block.name=Castlestone Brick
+tile.colorfulstone_block.name=Colorfulstone Block
+tile.copper_block.name=Copper Block
+tile.copper_ore_block.name=Copper Ore
+tile.citrine_ore_block.name=Citrine Ore
 
 tile.jasper_block.name=Jasper Block
-tile.jasper_ore.name=Jasper Ore
+tile.jasper_ore_block.name=Jasper Ore
 
-tile.nest.name=Nest
+tile.light_gray_granite_block.name=Light Gray Granite
+tile.limestone_block.name=Limestone
+tile.limestone_brick_block.name=Limestone Brick
 
-tile.marble_rough.name=Rough Marble
-tile.marble_smooth.name=Smooth Marble
+tile.mud_block.name=Mud
+tile.mud_brick_block.name=Mud Brick
 
+tile.nest_block.name=Nest Block
+
+tile.ornate_copper_block.name=Ornate Copper Block
+tile.ornate_iron_block.name=Ornate Iron Block
+tile.ornate_lapis_lazuli_block.name=Ornate Lapis Lazuli Block
+
+tile.polished_blue_granite_block.name=Polished Blue Granite
+tile.polished_marble_block.name=Polished Marble
+
+tile.refined_cobblestone_block.name=Refined Cobblestone
+tile.rough_blue_granite_block.name=Rough Blue Granite
+tile.rough_marble_block.name=Rough Marble
+tile.rough_stone_block.name=Rough Stone
 tile.rubber_block.name=Rubber Block
 
-tile.serpentinite_ore.name=Serpentinite Ore
+tile.smooth_marble_block.name=Smooth Marble
+tile.serpentinite_ore_block.name=Serpentinite Ore
 tile.serpentinite_block.name=Serpentinite Block
-tile.stone_path.name=Stone Path
-tile.stone_rough.name=Rough Stone
-
+tile.silver_block.name=Silver Block
+tile.silver_ore_block.name=Silver Ore
+tile.stone_path_block.name=Stone Path
 
 // ================== ENTITIES =================
-entity.bandit.name=BANDIT
-
+entity.bandit.name=Bandit
+entity.cleric.name=Cleric
+entity.soldier_etarian.name=Etarian Soldier
 
 // =============== CREATIVE TABS =================
-itemGroup.tabItems=PhoenixCraft Items
-itemGroup.tabBlocks=PhoenixCraft Blocks
-itemGroup.tabCombat=PhoenixCraft Armor & Weapons
-itemGroup.tabConsumables=PhoenixCraft Consumables
-itemGroup.tabMaterials=PhoenixCraft Materials
+itemGroup.AoPCraft.name=AoPCraft
