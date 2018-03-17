@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": [
+      { "model": "aopcraft:amethyst_ore_block" }
+    ]
+  }
+}
