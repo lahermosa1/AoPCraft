@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " IG",
+    " IS",
+    "  S"  ],
+  "key": {
+    "I": [
+      {
+        "item": "aopcraft:silver_ingot",
+        "data": 0
+      }
+    ],
+    "G": [
+      {
+       "item": "minecraft:gold_ingot",
+        "data": 0
+      }
+    ],
+    "S": [
+      {
+        "item": "minecraft:stick",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:bakari_waraxe",
+    "data": 0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "JJJ",
+    "JOJ",
+    " S "  ],
+  "key": {
+    "O": [
+      {
+        "item": "minecraft:obsidian",
+        "data": 0
+      }
+    ],
+    "J": [
+      {
+       "item": "aopcraft:jasper",
+        "data": 0
+      }
+    ],
+    "S": [
+      {
+        "item": "minecraft:stick",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:dark_jasper_sword",
+    "data": 0
+  }
+}

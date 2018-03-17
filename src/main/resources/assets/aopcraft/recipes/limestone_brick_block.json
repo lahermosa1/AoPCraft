@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " LL",
+    " LL"  ],
+  "key": {
+    "L": [
+      {
+        "item": "aopcraft:limestone_block",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:limestone_brick_block",
+    "data": 0
+  }
+}

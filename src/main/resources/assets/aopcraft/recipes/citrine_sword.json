@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    " C ",
+    " S "  ],
+  "key": {
+    "C": [
+      {
+        "item": "aopcraft:citrine",
+        "data": 0
+      }
+    ],
+    "S": [
+      {
+        "item": "minecraft:stick",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:citrine_sword",
+    "data": 0
+  }
+}

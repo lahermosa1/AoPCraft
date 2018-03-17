@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " AA",
+    " AA"
+  ],
+  "key": {
+    "A": [
+      {
+        "item": "aopcraft:jasper",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:jasper_block",
+    "data": 0
+  }
+}

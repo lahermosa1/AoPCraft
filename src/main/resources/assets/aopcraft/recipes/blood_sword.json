@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    " S ",
+    " S "  ],
+  "key": {
+    "R": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "data": 0
+      }
+    ],
+    "S": [
+      {
+        "item": "minecraft:stick",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:blood_sword",
+    "data": 0
+  }
+}
