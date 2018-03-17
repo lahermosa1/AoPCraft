@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "aopcraft:blocks/rough_blue_granite_block"
+    }
+}

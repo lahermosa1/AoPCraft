@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "aopcraft:blocks/light_gray_granite_block"
+    }
+}
