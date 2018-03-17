@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " BB",
+    " BB"  ],
+  "key": {
+    "B": [
+      {
+        "item": "aopcraft:rough_blue_granite_block",
+        "data": 0
+      }
+    ],
+
+  "result": {
+    "item": "aopcraft:polished_blue_granite_block",
+    "data": 0
+  }
+}

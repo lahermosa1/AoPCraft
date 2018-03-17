@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " CG",
+    " GC"  ],
+  "key": {
+    "C": [
+      {
+        "item": "minecraft:cobblestone",
+        "data": 0
+      }
+    ],
+    "G": [
+      {
+        "item": "minecraft:gravel",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:refined_cobblestone_block",
+    "data": 0
+  }
+}

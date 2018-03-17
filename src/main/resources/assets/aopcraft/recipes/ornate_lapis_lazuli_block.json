@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "MFM",
+    "MMM"  ],
+  "key": {
+    "M": [
+      {
+        "item": "minecraft:lapis_block",
+        "data": 0
+      }
+    ],
+    "F": [
+      {
+        "item": "minecraft:flint",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:ornate_lapis_lazuli_block",
+    "data": 0
+  }
+}

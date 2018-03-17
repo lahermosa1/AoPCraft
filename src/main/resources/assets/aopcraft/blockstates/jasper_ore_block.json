@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": [
+      { "model": "aopcraft:jasper_ore_block" }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IMI",
+    "IOI",
+    " S "  ],
+  "key": {
+    "I": [
+      {
+        "item": "aopcraft:serpentinite_ingot",
+        "data": 0
+      }
+    ],
+    "O": [
+      {
+        "item": "minecraft:obsidian",
+        "data": 0
+      }
+    ],
+    "M": [
+      {
+       "item": "aopcraft:marble",
+        "data": 0
+      }
+    ],
+    "S": [
+      {
+        "item": "minecraft:stick",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:serpentinite_battleaxe",
+    "data": 0
+  }
+}

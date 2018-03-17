@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "AAA",
-    "ACM",
-    "AAA"
+    "   ",
+    " SC",
+    " MS"
   ],
   "key": {
-    "A": [
+    "S": [
       {
         "item": "aopcraft:serpentinite_ingot",
         "data": 0

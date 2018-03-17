@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": [
+      { "model": "aopcraft:silver_ore_block" }
+    ]
+  }
+}

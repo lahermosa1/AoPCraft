@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": [
+      { "model": "aopcraft:refined_cobblestone_block" }
+    ]
+  }
+}

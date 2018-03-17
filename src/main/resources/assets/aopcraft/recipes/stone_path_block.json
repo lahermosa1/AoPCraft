@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "DDD",
+    "RRR"  ],
+  "key": {
+    "G": [
+      {
+        "item": "minecraft:gravel",
+        "data": 0
+      }
+    ],
+    "D": [
+      {
+        "item": "minecraft:dirt",
+        "data": 0
+      }
+    ],
+    "R": [
+      {
+        "item": "aopcraft:rough_stone_block",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:stone_path_block",
+    "data": 0
+  }
+}

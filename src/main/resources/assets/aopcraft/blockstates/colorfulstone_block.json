@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": [
+      { "model": "aopcraft:colorfulstone_block" }
+    ]
+  }
+}

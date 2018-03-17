@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS ",
+    "   ",
+    "   "  ],
+  "key": {
+    "S": [
+      {
+        "item": "aopcraft:silver_ingot",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:silver_nugget",
+    "data": 0
+  }
+}

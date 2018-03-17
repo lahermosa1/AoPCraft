@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    "OSO",
+    " S "  ],
+  "key": {
+    "R": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "data": 0
+      }
+    ],
+    "O": [
+      {
+        "item": "minecraft:obsidian",
+        "data": 0
+      }
+    ],
+    "S": [
+      {
+        "item": "minecraft:stick",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "aopcraft:winged_blood_sword",
+    "data": 0
+  }
+}
