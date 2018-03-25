@@ -1,8 +1,10 @@
 # Age of the PhoenixCraft
 Description: A Minecraft RPG-style mod based on the Age of the Phoenix fantasy series by author B. H. Gorden (www.ageofthephoenix.com).
 
-Repository Website: https://lahermosa1.github.io/AoPCraft/
+Repository Website: https://lahermosa1.github.io/AoPCraft/.
+
 Wiki: https://minecraft.gamepedia.com/Mods/PhoenixCraft.
+
 PlanetMinecraft Mod Project: https://www.planetminecraft.com/project/age-of-the-phoenixcraft/.
 
 
