@@ -8,6 +8,9 @@ Age of the PhoenixCraft PlanetMinecraft Mod Project: https://www.planetminecraft
 
 *** USEFUL REFERENCE CODE ***
 
+  // Minecraft By Example:
+  https://github.com/TheGreyGhost/MinecraftByExample/tree/master/src/main/java/minecraftbyexample
+
   // Entities:
   
   https://github.com/HarryTechRevs/MinecraftModding/tree/HarryTechRevs-1.12.2-Tutorials/main/java/harry/mod
