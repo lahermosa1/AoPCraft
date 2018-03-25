@@ -1,23 +1,13 @@
 {
   "pools":
   [
-    {
-      "rolls": 1,
-      "entries":
-      [
-        {
-          "type": "item",
-          "name": "minecraft:apple"
-        }
-      ]
-    },
-    {
+     {
         "rolls": 1,
         "entries":
         [
             {
                 "type": "item",
-                "name": "minecraft:wooden_sword",
+                "name": "aopcraft:phoenix_egg",
                 "weight": 10,
                 "functions":
                 [
@@ -25,7 +15,7 @@
                         "function": "set_count",
                         "count":
                         {
-                            "min": 0,
+                            "min": 1,
                             "max": 1
                         }
                     },
@@ -38,8 +28,32 @@
                         }
                     }
                 ]
+            },
+      {
+        "type": "item",
+        "name": "aopcraft:phoenix_sword",
+        "weight": 1,
+        "functions":
+        [
+          {
+            "function": "set_count",
+            "count":
+            {
+              "min": 1,
+              "max": 1
             }
-        ],
+          },
+          {
+            "function": "looting_enchant",
+            "count":
+            {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    ],
         "conditions":
         [
             {

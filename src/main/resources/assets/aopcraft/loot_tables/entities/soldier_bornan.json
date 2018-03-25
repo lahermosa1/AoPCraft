@@ -24,7 +24,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:silver_nugget",
+          "name": "minecraft:gold_nugget",
           "weight": 2,
           "function": "set_count",
           "count": {
@@ -40,7 +40,7 @@
           "entries": [
             {
               "type": "item",
-              "name": "minecraft:iron_sword",
+              "name": "minecraft:golden_sword",
               "weight": 0.5,
               "functions": [
                 {

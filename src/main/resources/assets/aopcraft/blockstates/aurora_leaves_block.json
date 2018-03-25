@@ -1,7 +1,6 @@
 {
-  "variants": {
-    "normal": [
+    "normal":
+    [
       { "model": "aopcraft:aurora_leaves_block" }
     ]
-  }
 }

@@ -31,16 +31,16 @@ item.phoenix_sword.name=Phoenix Sword
 
 item.rubber.name=Rubber
 
-item.serpentinite.name=Serpentinite
 item.serpentinite_battleaxe.name=Serpentinite Battle Axe
 item.serpentinite_ingot.name=Serpentinite Ingot
+item.serpentinite_nugget.name=Serpentinite Nugget
 item.scepter.name=Scepter
 item.silver.name=Silver
 item.axe_silver.name=Silver Axe
 item.hoe_silver.name=Silver Hoe
 item.silver_ingot.name=Silver Ingot
 item.silver_nugget.name=Silver Nugget
-item.pickaxe_silver.name=Silver Axe
+item.pickaxe_silver.name=Silver Pickaxe
 item.shovel_silver.name=Silver Shovel
 item.silver_spear.name=Silver-Tipped Spear
 
@@ -51,6 +51,7 @@ item.winged_blood_sword.name=Winged Blood Sword
 tile.amethyst_ore_block.name=Amethyst Ore
 tile.aurora_leaves_block.name=Aurora Leaves
 tile.aurora_log_block.name=Aurora Log
+tile.aurora_log_top_block.name=Aurora Log Top
 tile.aurora_planks_block.name=Aurora Wood Planks
 
 tile.black_sand_block.name=Black Sand
@@ -94,9 +95,23 @@ tile.silver_ore_block.name=Silver Ore
 tile.stone_path_block.name=Stone Path
 
 // ================== ENTITIES =================
+entity.animist_female.name=Female Animist
+entity.animist_male.name=Male Animist
+
 entity.bandit.name=Bandit
+entity.boss_phoenix.name=The Phoenix
+
 entity.cleric.name=Cleric
+
+entity.familiar.name=Cleric Familiar
+
+entity.mercenary.orc.male.name=Male Orc Mercenary
+entity.mercenary.orc.female.name=Female Orc Mercenary
+
 entity.soldier_etarian.name=Etarian Soldier
+entity.soldier_bornan.name=Bornan Soldier
+
+warrior.island.male.name=Male Island Warrior
 
 // =============== CREATIVE TABS =================
-itemGroup.AoPCraft.name=AoPCraft
+itemGroup.aopcrafttab=AoPCraft Tab

@@ -1,7 +1,8 @@
 {
     "parent": "block/cube_column",
-    "textures": {
-        "end": "aopcraft:blocks/log_aurora_top",
+    "textures":
+    {
+        "end": "aopcraft:blocks/aurora_log_top_block",
         "side": "aopcraft:blocks/aurora_log_block"
     }
 }
