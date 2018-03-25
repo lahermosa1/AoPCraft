@@ -5,9 +5,9 @@ Description: A Minecraft RPG-style mod based on the Age of the Phoenix fantasy s
 Wiki: https://minecraft.gamepedia.com/Mods/PhoenixCraft.
 
 PlanetMinecraft Mod Project: https://www.planetminecraft.com/project/age-of-the-phoenixcraft/.
-|
-|
-|
+//
+//
+//
 *** USEFUL REFERENCE CODE ***
 
   // Minecraft By Example:
