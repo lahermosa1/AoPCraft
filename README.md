@@ -6,9 +6,7 @@ Age of the PhoenixCraft Wiki: https://minecraft.gamepedia.com/Mods/PhoenixCraft.
 Age of the PhoenixCraft PlanetMinecraft Mod Project: https://www.planetminecraft.com/project/age-of-the-phoenixcraft/.
 
 
-// ============================================================
-//                   Useful Code Examples
-// ============================================================
+*** USEFUL REFERENCE CODE ***
 
   // Entities:
   https://github.com/HarryTechRevs/MinecraftModding/tree/HarryTechRevs-1.12.2-Tutorials/main/java/harry/mod
