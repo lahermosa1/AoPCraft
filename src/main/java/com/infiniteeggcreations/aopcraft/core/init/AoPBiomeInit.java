@@ -14,13 +14,13 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class AoPBiomeInit
 {
-    public static final Biome DANUK = new BiomeDanuk();
-    public static final Biome AURORA_WOODS = new BiomeAuroraWoods();
+    private static final Biome DANUK = new BiomeDanuk();
+    private static final Biome AURORA_WOODS = new BiomeAuroraWoods();
 
     public static void registerBiomes()
     {
-        initBiome(DANUK, "Danuk", BiomeType.DESERT, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.HILLS, BiomeDictionary.Type.END, BiomeDictionary.Type.SPOOKY);
-        initBiome(AURORA_WOODS, "Aurora Woods", BiomeType.WARM, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.LUSH, BiomeDictionary.Type.PLAINS, BiomeDictionary.Type.MAGICAL, BiomeDictionary.Type.SPOOKY);
+        initBiome(DANUK, "Danuk", BiomeType.DESERT, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.WASTELAND, BiomeDictionary.Type.END, BiomeDictionary.Type.DRY);
+        initBiome(AURORA_WOODS, "Aurora Woods", BiomeType.WARM, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.DENSE, BiomeDictionary.Type.MAGICAL);
     }
 
     private static Biome initBiome(Biome biome, String name, BiomeType biomeType, BiomeDictionary.Type... types)
@@ -28,6 +28,7 @@ public class AoPBiomeInit
         biome.setRegistryName(name);
         ForgeRegistries.BIOMES.register(biome);
         BiomeDictionary.addTypes(biome, types);
+        //TODO: Figure out how to have my AoP biomes spawn in a particular place and only once.
         BiomeManager.addBiome(biomeType, new BiomeManager.BiomeEntry(biome, 10));
         BiomeManager.addSpawnBiome(biome);
         return biome;

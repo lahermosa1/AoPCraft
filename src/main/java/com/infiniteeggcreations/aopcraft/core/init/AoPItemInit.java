@@ -2,11 +2,16 @@ package com.infiniteeggcreations.aopcraft.core.init;
 
 
 import com.infiniteeggcreations.aopcraft.core.AoPCraft;
-import com.infiniteeggcreations.aopcraft.objects.item.ItemBase;
-import com.infiniteeggcreations.aopcraft.objects.item.armor.ArmorBase;
-import com.infiniteeggcreations.aopcraft.objects.item.food.ItemBaseFood;
-import com.infiniteeggcreations.aopcraft.objects.tools.*;
+import com.infiniteeggcreations.aopcraft.core.lib.AoPReference;
+import com.infiniteeggcreations.aopcraft.core.objects.item.ItemBase;
+import com.infiniteeggcreations.aopcraft.core.objects.item.armor.ArmorBase;
+import com.infiniteeggcreations.aopcraft.core.objects.item.food.ItemBaseFood;
+import com.infiniteeggcreations.aopcraft.core.objects.tools.*;
 
+import com.infiniteeggcreations.aopcraft.core.objects.tools.ToolHoe;
+import com.infiniteeggcreations.aopcraft.core.objects.tools.ToolPickaxe;
+import com.infiniteeggcreations.aopcraft.core.objects.tools.ToolShovel;
+import com.infiniteeggcreations.aopcraft.core.objects.tools.ToolSword;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -17,7 +22,7 @@ import net.minecraftforge.common.util.EnumHelper;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * A class to instantiate all mod items.
+ * A class to instantiate all mod item.
  * Reference: https://www.youtube.com/watch?v=rQLhheYcnrY&t=26s
  */
 // Items are registered by my RegistryHandler class in the common -> util -> handlers folder
@@ -42,7 +47,7 @@ public class AoPItemInit
     //      Fifth value = SoundEvent soundEvent
     //      Sixth value = toughness
 
-    public static final ItemArmor.ArmorMaterial ARMOR_COPPER = EnumHelper.addArmorMaterial("armor_copper", AoPCraft.MODID + ":copper", 13, new int[]{2, 5, 5, 2}, 20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+    public static final ItemArmor.ArmorMaterial ARMOR_COPPER = EnumHelper.addArmorMaterial("armor_copper", AoPReference.MODID + ":copper", 13, new int[]{2, 5, 5, 2}, 20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
 
     // ============================= ARMOR =========================== //
     //public static final Item HELMET_COPPER = new ArmorBase("helmet_copper", ARMOR_COPPER, 1, EntityEquipmentSlot.HEAD);
@@ -124,5 +129,9 @@ public class AoPItemInit
     public static final Item SERPENTINITE_NUGGET = new ItemBase("serpentinite_nugget");
     public static final Item SILVER_INGOT = new ItemBase("silver_ingot");
     public static final Item SILVER_NUGGET = new ItemBase("silver_nugget");
+
+    // ============================== SPELLS ============================= //
+    //public static final Item PROJECTILE_SPELL = new Item();
+    //public static final Item SPELL_FLAME = new Item();
 
 }

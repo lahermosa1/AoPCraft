@@ -4,9 +4,12 @@
 
 package com.infiniteeggcreations.aopcraft.core.init;
 
-import com.infiniteeggcreations.aopcraft.objects.block.BlockBase;
+import com.infiniteeggcreations.aopcraft.aurorawoods.block.BlockAuroraLeaves;
+import com.infiniteeggcreations.aopcraft.aurorawoods.block.BlockAuroraLog;
+import com.infiniteeggcreations.aopcraft.aurorawoods.block.BlockAuroraSaplings;
+import com.infiniteeggcreations.aopcraft.core.objects.block.BlockBase;
 
-import com.infiniteeggcreations.aopcraft.objects.block.*;
+import com.infiniteeggcreations.aopcraft.danuk.block.BlockBlackSand;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -14,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A class to instantiate all mod blocks.
+ * A class to instantiate all mod block.
  * Reference: https://www.youtube.com/watch?v=rQLhheYcnrY&t=26s
  */
 // Items are registered by my RegistryHandler class in the common -> util -> handlers folder
@@ -23,15 +26,16 @@ import java.util.List;
 
 public class AoPBlockInit
 {
-    // List of all mod blocks:
+    // List of all mod block:
     public static final List<Block> BLOCKS = new ArrayList<Block>();
 
     public static final Block AMETHYST_ORE_BLOCK = new BlockBase("amethyst_ore_block", Material.IRON);
-    public static final Block AURORA_LEAVES_BLOCK = new BlockBase("aurora_leaves_block", Material.LEAVES);
-    public static final Block AURORA_LOG_BLOCK = new BlockBase("aurora_log_block", Material.WOOD);
+    public static final Block AURORA_LEAVES_BLOCK = new BlockAuroraLeaves("aurora_leaves_block");
+    public static final Block AURORA_LOG_BLOCK = new BlockAuroraLog("aurora_log_block");
     public static final Block AURORA_PLANKS_BLOCK = new BlockBase("aurora_planks_block", Material.WOOD);
+    public static final Block AURORA_SAPLINGS_BLOCK = new BlockAuroraSaplings("aurora_saplings_block");
 
-    public static final Block BLACK_SAND_BLOCK = new BlockBase("black_sand_block", Material.SAND);
+    public static final Block BLACK_SAND_BLOCK = new BlockBlackSand("black_sand_block");
 
     public static final Block CASTLESTONE_BRICK_BLOCK = new BlockBase("castlestone_brick_block",
             Material.IRON);
@@ -82,16 +86,10 @@ public class AoPBlockInit
 // =========================================================================== //
 //                          TREE & ORE GEN BLOCKS
 // =========================================================================== //
-
-    public static final Block ORE_END = new BlockOres("ore_end", "end");
-    public static final Block ORE_OVERWORLD = new BlockOres("ore_overworld", "overworld");
-    public static final Block ORE_NETHER = new BlockOres("ore_nether", "nether");
-
-
-    public static final Block PLANKS = new BlockPlank("planks");
-    public static final Block LOGS = new BlockLogs("log");
-    public static final Block LEAVES = new BlockLeaf("leaves");
-    public static final Block SAPLINGS = new BlockSaplings("sapling");
-    public static final Block DIRT = new BlockDirts("dirt");
+    //public static final Block PLANKS = new BlockPlank("planks");
+    //public static final Block LOGS = new BlockAuroraLog("aurora_log_block");
+    //public static final Block LEAVES = new BlockAuroraLeaves("aurora_leaves_block");
+    //public static final Block SAPLINGS = new BlockSaplings("sapling");
+    //public static final Block DIRT = new BlockDirts("dirt");
 
 }
