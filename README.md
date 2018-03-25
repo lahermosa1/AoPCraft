@@ -6,8 +6,6 @@ Age of the PhoenixCraft Wiki: https://minecraft.gamepedia.com/Mods/PhoenixCraft.
 Age of the PhoenixCraft PlanetMinecraft Mod Project: https://www.planetminecraft.com/project/age-of-the-phoenixcraft/.
 
 
-
-
 *** USEFUL REFERENCE CODE ***
 
   // Entities:
@@ -21,4 +19,4 @@ Age of the PhoenixCraft PlanetMinecraft Mod Project: https://www.planetminecraft
   
   https://github.com/suppergerrie2/ForgeTutorial
   https://suppergerrie2.com/
-  
+
