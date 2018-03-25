@@ -5,13 +5,10 @@
 package com.infiniteeggcreations.aopcraft.core.util.handlers;
 
 
+import com.infiniteeggcreations.aopcraft.core.init.*;
 import com.infiniteeggcreations.aopcraft.core.util.interfaces.IHasModel;
-import com.infiniteeggcreations.aopcraft.core.init.AoPBiomeInit;
-import com.infiniteeggcreations.aopcraft.core.init.AoPBlockInit;
-import com.infiniteeggcreations.aopcraft.core.init.AoPItemInit;
-
-import com.infiniteeggcreations.aopcraft.core.world.gen.WorldGenAoPTrees;
 import com.infiniteeggcreations.aopcraft.core.world.gen.generators.WorldGenAoPOres;
+
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 
@@ -22,7 +19,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
- * A class to register all mod items.
+ * A class to register all mod item.
  * Reference: https://www.youtube.com/watch?v=rQLhheYcnrY&t=26s
  */
 
@@ -39,8 +36,8 @@ public class RegistryHandler
     public static void onBlockRegister(RegistryEvent.Register<Block> event)
     {
         event.getRegistry().registerAll(AoPBlockInit.BLOCKS.toArray(new Block[0]));
+        // AoPCraft.proxy.registerTileEntities();
     }
-
 
     @SubscribeEvent
     public static void onModelRegister(ModelRegistryEvent event)
@@ -62,12 +59,30 @@ public class RegistryHandler
         }
     }
 
-    public static void otherRegistries()
+    public static void preInitRegistries()
     {
-        GameRegistry.registerWorldGenerator(new WorldGenAoPOres(), 0);
-        GameRegistry.registerWorldGenerator(new WorldGenAoPTrees(), 0);
+        //TODO: How does changing the weight change the amount of ore that spawns?
+        GameRegistry.registerWorldGenerator(new WorldGenAoPOres(), 2);
+        //GameRegistry.registerWorldGenerator(new WorldGenAoPTrees(), 0);
         AoPBiomeInit.registerBiomes();
+        AoPEntityInit.registerEntities();
+        RenderHandler.registerEntityRenders();
 
+    }
+
+    public static void initRegistries()
+    {
+        AoPRecipeInit.init();
+        // EntitySpawnInit.spawnInit(); Moved to postInit. Working.
+
+        // SoundsHandler.registerSounds();
+    }
+
+    public static void postInitRegistries()
+    {
+        //WorldType DANUK = new WorldTypeCopper();
+        //WorldType AURORA_WOODS = new WorldTypeCustom();
+        EntitySpawnInit.spawnInit();
     }
 
 }

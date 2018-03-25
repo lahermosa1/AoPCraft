@@ -6,8 +6,6 @@ package com.infiniteeggcreations.aopcraft.core.world.gen.generators;
 
 import com.google.common.base.Predicate;
 import com.infiniteeggcreations.aopcraft.core.init.AoPBlockInit;
-import com.infiniteeggcreations.aopcraft.core.util.handlers.EnumHandler;
-import com.infiniteeggcreations.aopcraft.objects.block.BlockOres;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
@@ -16,7 +14,6 @@ import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenMinable;
-import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
 import java.util.Random;
@@ -32,50 +29,45 @@ import java.util.Random;
 
 public class WorldGenAoPOres implements IWorldGenerator
 {
-    private WorldGenerator citrine_ore_block, copper_ore_block, jasper_ore_block, silver_ore_block;
-
-    public WorldGenAoPOres()
-    {
-
-        // ====================================================================
-        //               AoPBlockInit replacing Vanilla blocks
-        // ====================================================================
-        citrine_ore_block = new WorldGenMinable(AoPBlockInit.CITRINE_ORE_BLOCK.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandler.EnumType.AURORA_WOODS), 9, BlockMatcher.forBlock(Blocks.LAPIS_BLOCK));
-        copper_ore_block = new WorldGenMinable(AoPBlockInit.COPPER_ORE_BLOCK.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandler.EnumType.AURORA_WOODS), 9, BlockMatcher.forBlock(Blocks.IRON_ORE));
-        jasper_ore_block = new WorldGenMinable(AoPBlockInit.JASPER_ORE_BLOCK.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandler.EnumType.AURORA_WOODS), 9, BlockMatcher.forBlock(Blocks.GRAVEL));
-        silver_ore_block = new WorldGenMinable(AoPBlockInit.SILVER_ORE_BLOCK.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandler.EnumType.AURORA_WOODS), 9, BlockMatcher.forBlock(Blocks.IRON_ORE));
-
-
-    }
+    public WorldGenAoPOres() {}
 
     @Override
-    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-
-        switch (world.provider.getDimension()) {
+    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider)
+    {
+        switch (world.provider.getDimension())
+        {
             // ========================= ModBlocks replacing stone =====================
             case 0:
                 runGenerator(AoPBlockInit.ROUGH_BLUE_GRANITE_BLOCK.getDefaultState(), 10, 10, 12, 50, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
 
-                runGenerator(AoPBlockInit.LIGHT_GRAY_GRANITE_BLOCK.getDefaultState(), 10, 15, 0, 72, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
+                runGenerator(AoPBlockInit.LIGHT_GRAY_GRANITE_BLOCK.getDefaultState(), 20, 15, 0, 72, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
 
-                runGenerator(AoPBlockInit.JASPER_ORE_BLOCK.getDefaultState(), 4, 5, 0, 32, BlockMatcher.forBlock(Blocks.GRAVEL), world, random, chunkX, chunkZ);
+                runGenerator(AoPBlockInit.JASPER_ORE_BLOCK.getDefaultState(), 20, 1, 0, 28, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
 
-                runGenerator(AoPBlockInit.LIMESTONE_BLOCK.getDefaultState(), 12, 18, 62, 72, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
+                runGenerator(AoPBlockInit.LIMESTONE_BLOCK.getDefaultState(), 20, 20, 52, 82, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
 
-                runGenerator(AoPBlockInit.ROUGH_MARBLE_BLOCK.getDefaultState(), 7, 10, 12, 50, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
+                runGenerator(AoPBlockInit.ROUGH_MARBLE_BLOCK.getDefaultState(), 12, 16, 28, 48, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
 
-                runGenerator(AoPBlockInit.MUD_BLOCK.getDefaultState(), 12, 16, 66, 72, BlockMatcher.forBlock(Blocks.CLAY), world, random, chunkX, chunkZ);
+                runGenerator(AoPBlockInit.MUD_BLOCK.getDefaultState(), 12, 20, 66, 72, BlockMatcher.forBlock(Blocks.CLAY), world, random, chunkX, chunkZ);
 
-                runGenerator(AoPBlockInit.SERPENTINITE_ORE_BLOCK.getDefaultState(), 6, 6, 0, 22, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
+                runGenerator(AoPBlockInit.SERPENTINITE_ORE_BLOCK.getDefaultState(), 8, 6, 8, 20, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
 
-                runGenerator(AoPBlockInit.ROUGH_STONE_BLOCK.getDefaultState(), 20, 20, 0, 255, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
+                runGenerator(AoPBlockInit.CITRINE_ORE_BLOCK.getDefaultState(), 2, 4, 0, 22, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
+
+                runGenerator(AoPBlockInit.AMETHYST_ORE_BLOCK.getDefaultState(), 1, 5, 0, 18, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
+
+                runGenerator(AoPBlockInit.ROUGH_STONE_BLOCK.getDefaultState(), 30, 40, 0, 255, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
                 break;
 
 
             // ========================= ModBlocks replacing end stone =====================
+
             case 1:
-                runGenerator(AoPBlockInit.BLACK_SAND_BLOCK.getDefaultState(), 20, 20, 0, 255, BlockMatcher.forBlock(Blocks.END_STONE), world, random, chunkX, chunkZ);
+                runGenerator(AoPBlockInit.BLACK_SAND_BLOCK.getDefaultState(), 100, 100, 10, 255, BlockMatcher.forBlock(Blocks.END_STONE), world, random, chunkX, chunkZ);
+                runGenerator(AoPBlockInit.AMETHYST_ORE_BLOCK.getDefaultState(), 3, 5, 0, 20, BlockMatcher.forBlock(Blocks.END_STONE), world, random, chunkX, chunkZ);
+                runGenerator(Blocks.MAGMA.getDefaultState(), 20, 20, 0, 10, BlockMatcher.forBlock(Blocks.END_STONE), world, random, chunkX, chunkZ);
                 break;
+
         }
     }
 
