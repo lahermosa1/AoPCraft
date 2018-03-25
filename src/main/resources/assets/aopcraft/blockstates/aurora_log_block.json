@@ -1,8 +1,6 @@
 {
-  "variants": {
     "axis=y":    { "model": "aopcraft:aurora_log_block" },
     "axis=z":    { "model": "aopcraft:aurora_log_block", "x": 90 },
     "axis=x":    { "model": "aopcraft:aurora_log_block", "x": 90, "y": 90 },
-    "axis=none": { "model": "aopcraft:log_aurora_bark"}
-  }
+    "axis=none": { "model": "aopcraft:aurora_bark"}
 }
