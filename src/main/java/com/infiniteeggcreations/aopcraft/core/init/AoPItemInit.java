@@ -1,10 +1,8 @@
 package com.infiniteeggcreations.aopcraft.core.init;
 
 
-import com.infiniteeggcreations.aopcraft.core.AoPCraft;
 import com.infiniteeggcreations.aopcraft.core.lib.AoPReference;
-import com.infiniteeggcreations.aopcraft.core.objects.item.ItemBase;
-import com.infiniteeggcreations.aopcraft.core.objects.item.armor.ArmorBase;
+import com.infiniteeggcreations.aopcraft.core.objects.item.*;
 import com.infiniteeggcreations.aopcraft.core.objects.item.food.ItemBaseFood;
 import com.infiniteeggcreations.aopcraft.core.objects.tools.*;
 
@@ -13,7 +11,6 @@ import com.infiniteeggcreations.aopcraft.core.objects.tools.ToolPickaxe;
 import com.infiniteeggcreations.aopcraft.core.objects.tools.ToolShovel;
 import com.infiniteeggcreations.aopcraft.core.objects.tools.ToolSword;
 import net.minecraft.init.SoundEvents;
-import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 
@@ -54,6 +51,18 @@ public class AoPItemInit
     //public static final Item CHESTPLATE_COPPER = new ArmorBase("chestplate_copper", ARMOR_COPPER, 1, EntityEquipmentSlot.CHEST);
     //public static final Item LEGGINGS_COPPER = new ArmorBase("leggings_copper", ARMOR_COPPER, 2, EntityEquipmentSlot.LEGS);
     //public static final Item BOOTS_COPPER = new ArmorBase("boots_copper", ARMOR_COPPER, 1, EntityEquipmentSlot.FEET);
+
+
+    // ============================== GUI SCREENS ============================ //
+    // Player Tome opens the Main AoPGui:
+    public static final Item TOME_PLAYER = new ItemTomePlayer("tome_player");
+    public static final Item NOTE_ONE = new ItemNoteOne("note_one");
+    public static final Item PAGE_ONE = new ItemPageOne("page_one");
+    public static final Item BOOK_MAROON = new ItemBookMaroon("book_maroon");
+
+    // ================= BUTTON ICONS ================= //
+    public static final Item COIN = new ItemBase("coin");
+    public static final Item COUNTER_COIN = new ItemCounterCoin("counter_coin");
 
     // ============================= MISC ITEMS =========================== //
     public static final Item BUCKET_LATEX = new ItemBase("bucket_latex").setMaxStackSize(1);

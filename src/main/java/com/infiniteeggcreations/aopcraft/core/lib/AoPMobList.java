@@ -152,5 +152,5 @@ public class AoPMobList
     public static final int ENTITY_BOSS_GREAT_OWL = 503;
     public static final int ENTITY_BOSS_PHOENIX = 504;
 
-    
+
 }
