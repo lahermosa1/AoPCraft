@@ -4,24 +4,23 @@
 
 package com.infiniteeggcreations.aopcraft.core.objects.item;
 
-import com.infiniteeggcreations.aopcraft.core.util.interfaces.IHasModel;
 import com.infiniteeggcreations.aopcraft.core.AoPCraft;
 import com.infiniteeggcreations.aopcraft.core.init.AoPItemInit;
-
+import com.infiniteeggcreations.aopcraft.core.util.interfaces.IHasModel;
 import net.minecraft.item.Item;
 
 /**
  * Reference: https://www.youtube.com/watch?v=rQLhheYcnrY
  */
-public class ItemBase extends Item implements IHasModel
+public class ItemCounterCoin extends Item implements IHasModel
 {
 
     // ========== Constructor ==========
-    public ItemBase(String name)
+    public ItemCounterCoin(String name)
     {
         setUnlocalizedName(name);
         setRegistryName(name);
-        setMaxStackSize(64);
+        setMaxStackSize(1);
         setCreativeTab(AoPCraft.AOPCRAFTTAB);
 
         AoPItemInit.ITEMS.add(this);
