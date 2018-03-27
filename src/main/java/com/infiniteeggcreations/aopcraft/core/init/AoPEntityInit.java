@@ -6,6 +6,7 @@ package com.infiniteeggcreations.aopcraft.core.init;
 
 import com.infiniteeggcreations.aopcraft.core.AoPCraft;
 import com.infiniteeggcreations.aopcraft.core.entity.boss.EntityBossPhoenix;
+import com.infiniteeggcreations.aopcraft.core.lib.AoPMobList;
 import com.infiniteeggcreations.aopcraft.core.lib.AoPReference;
 
 import com.infiniteeggcreations.aopcraft.aurorawoods.entity.EntityBandit;
@@ -31,19 +32,19 @@ public class AoPEntityInit
         public static void registerEntities()
         {
 
-            registerEntity("animist_female", EntityAnimistFemale.class, AoPReference.ENTITY_ANIMIST_FEMALE, 30, 65298, 12615424);
+            registerEntity("animist_female", EntityAnimistFemale.class, AoPMobList.ENTITY_ANIMIST_FEMALE, 30, 65298, 12615424);
 
-            registerEntity("bandit", EntityBandit.class, AoPReference.ENTITY_BANDIT, 20, 16753152, 7913983);
+            registerEntity("bandit", EntityBandit.class, AoPMobList.ENTITY_BANDIT, 20, 16753152, 7913983);
 
-            registerEntity("boss_phoenix", EntityBossPhoenix.class, AoPReference.ENTITY_BOSS_PHOENIX, 60, 5439488, 12976128);
+            registerEntity("boss_phoenix", EntityBossPhoenix.class, AoPMobList.ENTITY_BOSS_PHOENIX, 60, 5439488, 12976128);
 
-            registerEntity("cleric", EntityCleric.class, AoPReference.ENTITY_CLERIC, 30, 10485948, 16711875);
+            registerEntity("cleric", EntityCleric.class, AoPMobList.ENTITY_CLERIC, 30, 10485948, 16711875);
 
-            registerEntity("familiar", EntityFamiliar.class, AoPReference.ENTITY_FAMILIAR, 40, 16776960, 16748032);
+            registerEntity("familiar", EntityFamiliar.class, AoPMobList.ENTITY_FAMILIAR, 40, 16776960, 16748032);
 
-            registerEntity("soldier_bornan", EntitySoldierBornan.class, AoPReference.ENTITY_SOLDIER_BORNAN, 20, 162, 16773632);
+            registerEntity("soldier_bornan", EntitySoldierBornan.class, AoPMobList.ENTITY_SOLDIER_BORNAN, 20, 162, 16773632);
 
-            registerEntity("soldier_etarian", EntitySoldierEtarian.class, AoPReference.ENTITY_SOLDIER_ETARIAN, 20, 8420218, 0);
+            registerEntity("soldier_etarian", EntitySoldierEtarian.class, AoPMobList.ENTITY_SOLDIER_ETARIAN, 20, 8420218, 0);
 
 
         }
